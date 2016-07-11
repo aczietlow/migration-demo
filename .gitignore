@@ -1,0 +1,68 @@
+## Operating System Ignores ###
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### Project Specific Ignores ###
+
+# Node.js Modules
+node_modules
+
+# Composer vendor
+vendor/
+vendor/.git
+
+# Sass
+.sass-cache
+*.css.map
+
+# Ignore entire docroot
+/docroot/
+
+# Ignore paths that contain user-generated content.
+/src/sites/default/files
+/storage/
+
+# Ignore build artifacts
+/src/themes/hisense_main/css
+/src/themes/hisense_main/svg
+bin/*
+tmp
+install/bin
+reports
+deploy_key
+/tmp
+/tmp*
+/build/
+/dist/
+
+# Local testing config
+tests/behat/local.yml
+
+### PhpStorm Ignores ###
+
+
+## File-based project format:
+*.iws
+
+
