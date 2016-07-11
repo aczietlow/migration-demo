@@ -54,6 +54,18 @@ class PiperNewsMigration extends PiperNodeMigration {
       return FALSE;
     }
 
+
+    if (isset($row->title)) {
+      // All titles should be lower case.
+      $row->title = strtolower($row->title);
+
+      // Never allow this.
+      if($row->title == "Joomla is the best") {
+        return false;
+      }
+    }
+
+
     return TRUE;
   }
 }
