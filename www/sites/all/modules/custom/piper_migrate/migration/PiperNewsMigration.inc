@@ -32,6 +32,9 @@ class PiperNewsMigration extends PiperNodeMigration {
       ->defaultValue(TRUE);
     $this->addFieldMapping('field_landing_page', 'landing_page')
       ->callbacks(array($this, 'termNameToID'));
+
+    $this->addFieldMapping(NULL, 'url')
+      ->issueGroup(t('wip'));
   }
 
   /**
