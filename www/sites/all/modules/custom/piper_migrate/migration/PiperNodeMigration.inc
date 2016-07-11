@@ -7,7 +7,7 @@
 /**
  * Base class to use with all migrations.
  */
-class PiperNodeMigration extends DrupalNode6Migration {
+class PiperNodeMigration extends PiperMigration {
 
   /**
    * The source and destination content types (bundles) we're dealing with.
@@ -35,14 +35,6 @@ class PiperNodeMigration extends DrupalNode6Migration {
     parent::__construct($arguments);
 
 
-    $this->team = array(
-      new MigrateTeamMember(
-        'Chris Zietlow', 'chris.zietlow@zietlow.ninja',
-        t('Developer')
-      ),
-    );
-
-    $this->description = $arguments['description'];
 
     // Set destination content type.
     $this->destinationType = $arguments['destination'];
@@ -63,9 +55,6 @@ class PiperNodeMigration extends DrupalNode6Migration {
     $this->nodeOptions = MigrateDestinationNode::options($this->defaultLanguage, $this->defaultFormat);
     $this->destination = new MigrateDestinationNode($this->destinationType);
 
-    // Set the default author to user 1.
-    $this->addFieldMapping('uid')
-      ->defaultValue(1);
     // Set the title.
     $this->addFieldMapping('title', 'title');
     $this->addFieldMapping('status')

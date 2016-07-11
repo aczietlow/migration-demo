@@ -30,6 +30,14 @@ function piper_migrate_migrate_api() {
         'description' => t('Migrate News content'),
         'soft_dependencies' => array('TrpdcTaxonomy'),
       ),
+      'PiperPage' => $common_arguments + array(
+        'class_name' => 'PiperPageMigration',
+        'group_name' => 'node',
+        'source' => 'page_content.csv',
+        'destination' => 'news',
+        'description' => t('Migrate News content'),
+        'soft_dependencies' => array('TrpdcTaxonomy'),
+        ),
       // D2D Migration.
       'PiperFile' => $common_arguments + array(
         'class_name' => 'DrupalFile6Migration',

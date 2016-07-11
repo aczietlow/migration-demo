@@ -9,7 +9,9 @@ dependencies[] = migrate_extras
 dependencies[] = migrate_ui
 dependencies[] = migration_demo
 
+files[] = migration/PiperMigration.inc
 files[] = migration/PiperNewsMigration.inc
 files[] = migration/PiperNodeMigration.inc
+files[] = migration/PiperPageMigration.inc
 files[] = piper_migrate.module
 files[] = piper_migrate.migrate.inc
