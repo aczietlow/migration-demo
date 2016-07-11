@@ -9,7 +9,7 @@
 /**
  * Piper %Page% Node Migration.
  */
-class PiperSeriesItemMigration extends PiperNodeMigration {
+class PiperNewsMigration extends PiperNodeMigration {
 
   /**
    * Constructs the Node Migration.
