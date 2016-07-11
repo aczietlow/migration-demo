@@ -1,0 +1,13 @@
+name = Piper Migrate
+description = Pied Piper Node Migration
+package = Demo
+core = 7.x
+version = 7.x-1.x
+dependencies[] = migrate
+dependencies[] = migrate_d2d
+dependencies[] = migrate_extras
+
+files[] = migration/PiperNewsMigration.inc
+files[] = migration/PiperNodeMigration.inc
+files[] = piper_migrate.module
+files[] = piper_migrate.migrate.inc
