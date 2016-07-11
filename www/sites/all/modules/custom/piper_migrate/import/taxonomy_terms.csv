@@ -1,0 +1,12 @@
+id,weight,vocabulary,name,description,parent
+23,1,categories,Content,Content
+24,1,categories,Financial,Financial,Content
+25,1,categories,Streaming,Streaming,Financial
+26,1,categories,Reference,Reference,Financial
+27,1,categories,News,News,Content
+28,1,categories,Scholarly Research,Scholarly Research,Content
+29,1,categories,Intellectual Property,Intellectual Property,Content
+30,1,categories,Patents,Patents,Intellectual Property
+3,1,categories,Trademarks,Trademarks,Intellectual Property
+31,1,categories,Life Sciences,Life Sciences,Content
+32,1,categories,Legal,Legal,Content
