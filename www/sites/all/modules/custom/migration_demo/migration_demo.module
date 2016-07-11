@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Migration Demo feature.
+ */
+
+include_once 'migration_demo.features.inc';

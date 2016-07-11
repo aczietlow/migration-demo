@@ -6,6 +6,7 @@ version = 7.x-1.x
 dependencies[] = migrate
 dependencies[] = migrate_d2d
 dependencies[] = migrate_extras
+dependencies[] = migrate_ui
 dependencies[] = migration_demo
 
 files[] = migration/PiperNewsMigration.inc

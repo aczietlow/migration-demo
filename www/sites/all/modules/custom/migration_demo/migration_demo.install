@@ -1,0 +1,12 @@
+<?php
+
+
+/**
+ * Implements hook_install().
+ */
+function migration_demo_install() {
+  // Just NO!
+  if (module_exists('overlay')) {
+    module_disable(array('overlay'));
+  }
+}
