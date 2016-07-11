@@ -13,5 +13,6 @@ files[] = migration/PiperMigration.inc
 files[] = migration/PiperNewsMigration.inc
 files[] = migration/PiperNodeMigration.inc
 files[] = migration/PiperPageMigration.inc
+files[] = migration/PiperTaxonomyMigration.inc
 files[] = piper_migrate.module
 files[] = piper_migrate.migrate.inc
